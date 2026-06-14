@@ -1,0 +1,246 @@
+[
+  {
+    "customerEmail": "anna.klein@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "2026-07-10T09:00:00Z",
+    "returnDateAndTime": "2026-07-12T18:00:00Z",
+    "carCategory": "economy",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "06/28",
+      "cvv": "123",
+      "cardholderName": "Anna Klein"
+    },
+    "additionalNotes": ""
+  },
+  {
+    "customerEmail": "boris.lev@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Jerusalem",
+    "pickupDateAndTime": "2026-07-11T10:00:00Z",
+    "returnDateAndTime": "2026-07-13T18:00:00Z",
+    "carCategory": "compact",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "08/27",
+      "cvv": "456",
+      "cardholderName": "Boris Lev"
+    },
+    "additionalNotes": "URGENT! I need the car as soon as possible. I am asking again — I already sent a request yesterday and got no reply."
+  },
+  {
+    "customerEmail": "carla.rossi@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Haifa",
+    "pickupDateAndTime": "2026-07-15T08:00:00Z",
+    "returnDateAndTime": "2026-07-17T20:00:00Z",
+    "carCategory": "suv",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "03/29",
+      "cvv": "789",
+      "cardholderName": "Carla Rossi"
+    },
+    "additionalNotes": "Need a child seat. Please deliver the car to 12 Herzl Street, Haifa."
+  },
+  {
+    "customerEmail": "daniel.cohen@example.com",
+    "requestType": "new_booking",
+    "bookingRef": "AB-12345",
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "",
+    "returnDateAndTime": "2026-07-23T18:00:00Z",
+    "carCategory": "van",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "11/28",
+      "cvv": "321",
+      "cardholderName": "Daniel Cohen"
+    },
+    "additionalNotes": "Please add a child seat."
+  },
+  {
+    "customerEmail": "elena.park@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "2026-07-16T10:00:00Z",
+    "returnDateAndTime": null,
+    "carCategory": "compact",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "05/28",
+      "cvv": "654",
+      "cardholderName": "Elena Park"
+    },
+    "additionalNotes": "This is urgent. Please confirm today — I asked about the same booking last week and still have no answer."
+  },
+  {
+    "customerEmail": "frank.miller@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": null,
+    "pickupDateAndTime": "2026-07-25T14:00:00Z",
+    "returnDateAndTime": "2026-07-27T18:00:00Z",
+    "carCategory": "premium",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "09/27",
+      "cvv": "111",
+      "cardholderName": "Frank Miller"
+    },
+    "additionalNotes": "Please meet me at Ben Gurion Airport (Terminal 3) with the car."
+  },
+  {
+    "customerEmail": "gina.shapira@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Haifa",
+    "pickupDateAndTime": "2026-07-22T09:00:00Z",
+    "returnDateAndTime": "2026-07-24T18:00:00Z",
+    "carCategory": "economy",
+    "additionalNotes": "Please respond ASAP. I am writing for the second time."
+  },
+  {
+    "customerEmail": "henry.weiss@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "2026-07-02T08:00:00Z",
+    "returnDateAndTime": "2026-07-04T20:00:00Z",
+    "carCategory": "suv",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "12/28",
+      "cvv": "222",
+      "cardholderName": "Henry Weiss"
+    },
+    "additionalNotes": "Very urgent — my flight is in two days. Please confirm immediately."
+  },
+  {
+    "customerEmail": "iris.adler@example.com",
+    "requestType": "modify_booking",
+    "bookingRef": "AB-12345",
+    "pickupCity": null,
+    "pickupDateAndTime": null,
+    "returnDateAndTime": null,
+    "carCategory": null,
+    "additionalNotes": "I would like to change the return date to July 20, 2026."
+  },
+  {
+    "customerEmail": "jack.oren@example.com",
+    "requestType": "modify_booking",
+    "bookingRef": "CR-54321",
+    "pickupCity": null,
+    "pickupDateAndTime": null,
+    "returnDateAndTime": null,
+    "carCategory": null,
+    "additionalNotes": "Please add a child seat to my existing booking."
+  },
+  {
+    "customerEmail": "karen.lavi@example.com",
+    "requestType": "modify_booking",
+    "bookingRef": null,
+    "pickupCity": null,
+    "pickupDateAndTime": null,
+    "returnDateAndTime": null,
+    "carCategory": null,
+    "additionalNotes": "I need to change pickup time for my reservation. My booking number is AB-98765. I already emailed twice about this — please handle urgently."
+  },
+  {
+    "customerEmail": "liam.bar@example.com",
+    "requestType": "cancel",
+    "bookingRef": "TA-77889",
+    "pickupCity": null,
+    "pickupDateAndTime": null,
+    "returnDateAndTime": null,
+    "carCategory": null,
+    "additionalNotes": "Please cancel my booking."
+  },
+  {
+    "customerEmail": "maya.ron@example.com",
+    "requestType": "cancel",
+    "bookingRef": null,
+    "pickupCity": null,
+    "pickupDateAndTime": null,
+    "returnDateAndTime": null,
+    "carCategory": null,
+    "additionalNotes": "URGENT: I need to cancel booking HF-33441 before tomorrow. I mentioned this booking number in my previous message. Sorry for the inconvenience."
+  },
+  {
+    "customerEmail": "anna.klein.example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "2026-07-10T09:00:00Z",
+    "returnDateAndTime": "2026-07-12T18:00:00Z",
+    "carCategory": "economy",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "06/28",
+      "cvv": "123",
+      "cardholderName": "Anna Klein"
+    },
+    "additionalNotes": "Zod fail: customerEmail без @"
+  },
+  {
+    "customerEmail": "boris.lev@example.com",
+    "requestType": "change_booking",
+    "bookingRef": null,
+    "pickupCity": "Haifa",
+    "pickupDateAndTime": "2026-07-11T10:00:00Z",
+    "returnDateAndTime": "2026-07-13T18:00:00Z",
+    "carCategory": "compact",
+    "additionalNotes": "Zod fail: requestType не из enum"
+  },
+  {
+    "customerEmail": "carla.rossi@example.com",
+    "requestType": "modify_booking",
+    "bookingRef": "AB12345",
+    "pickupCity": null,
+    "pickupDateAndTime": null,
+    "returnDateAndTime": null,
+    "carCategory": null,
+    "additionalNotes": "Zod fail: bookingRef без дефиса (нужно XX-12345)"
+  },
+  {
+    "customerEmail": "daniel.cohen@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "2026-07-21",
+    "returnDateAndTime": "2026-07-23T18:00:00Z",
+    "carCategory": "van",
+    "additionalNotes": "Zod fail: pickupDateAndTime без времени (нужен ISO datetime)"
+  },
+  {
+    "customerEmail": "elena.park@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Tel Aviv",
+    "pickupDateAndTime": "2026-07-16T10:00:00Z",
+    "returnDateAndTime": "2026-07-18T18:00:00Z",
+    "carCategory": "sedan",
+    "additionalNotes": "Zod fail: carCategory не из enum"
+  },
+  {
+    "customerEmail": "frank.miller@example.com",
+    "requestType": "new_booking",
+    "bookingRef": null,
+    "pickupCity": "Haifa",
+    "pickupDateAndTime": "2026-07-25T14:00:00Z",
+    "returnDateAndTime": "2026-07-27T18:00:00Z",
+    "carCategory": "premium",
+    "paymentCard": {
+      "cardNumber": "4111",
+      "expiryDate": "13/28",
+      "cvv": "12",
+      "cardholderName": "F"
+    },
+    "additionalNotes": "Zod fail: короткий номер карты, неверный месяц expiry, короткий cvv, короткое имя"
+  }
+]

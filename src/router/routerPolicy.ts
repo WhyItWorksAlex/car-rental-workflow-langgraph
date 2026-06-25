@@ -23,8 +23,13 @@ export function routePolicy(ctx: PolicyContext): PolicyRoute {
     return "human_ai_summary";
   }
 
-  if (classification.confidence === "low") {
-    console.log("[policy router] human_ai_summary (low confidence)");
+  if (classification.confidence === "low" || classification.bookingTypeIntension === "unclear") {
+    console.log("[policy router] human_ai_summary (low confidence or unclear request type)");
+    return "human_ai_summary";
+  }
+
+  if (!classification.declaredIntentMatches || request.requestType !== classification.bookingTypeIntension) {
+    console.log("[policy router] human_ai_summary (declared mismatch for request type)");
     return "human_ai_summary";
   }
 

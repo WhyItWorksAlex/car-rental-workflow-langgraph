@@ -1,6 +1,7 @@
 import { z } from "zod";
 
-export const requestTypeSchema = z.enum(["new_booking", "modify_booking", "cancel"]);
+export const REQUEST_TYPE_VALUES = ["new_booking", "modify_booking", "cancel"] as const;
+export const requestTypeSchema = z.enum(REQUEST_TYPE_VALUES);
 
 export const carCategorySchema = z.enum(["economy", "compact", "suv", "van", "premium"]);
 
@@ -23,6 +24,7 @@ export const incomingRequestSchema = z.object({
   additionalNotes: z.string().default(""),
 });
 
+export type RealRequestType = z.infer<typeof requestTypeSchema>;
 export type RequestType = z.infer<typeof requestTypeSchema> | null;
 export type CarCategory = z.infer<typeof carCategorySchema> | null;
 export type PaymentCard = z.infer<typeof paymentCardSchema> | null;

@@ -21,6 +21,8 @@ You receive a JSON payload with:
 - urgency: "low" or "high"
 - additions: brief list of extra wishes from additionalNotes (empty string if none)
 - extractedBookingRef: booking ref from notes only, or null
+- bookingTypeIntension: estimate intension of the customer from notes only. If there is no notes, set as reuest.requestType. If you are not sure, set as "unclear".
+- declaredIntentMatches: true if request.requestType matches bookingTypeIntension. false when declared type conflicts with notes (e.g. requestType=new_booking but customer asks to cancel).
 - summary: 2–4 sentences for a human operator — request type, field problems from fieldIssues, urgency, key wishes. Write in English.
 - hasFieldProblems: true if fieldIssues array is non-empty
 - hasAdditionalRequirements: true if additionalNotes contains wishes beyond structured fields

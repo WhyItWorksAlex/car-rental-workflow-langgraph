@@ -1,5 +1,5 @@
-import type { IncomingRequest } from "../src/schemas/incomingRequest";
-import type { LlmClassification } from "../src/schemas/llmClassification";
+import type { IncomingRequest } from "../schemas/incomingRequest";
+import type { LlmClassification } from "../schemas/llmClassification";
 
 const defaultPaymentCard = {
   cardNumber: "4111111111111111",

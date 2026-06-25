@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { validateRequest } from "../src/tools/validateRequest";
+import { validateRequest } from "../tools/validateRequest";
 import { buildRequest } from "./fixtures";
 
 describe("validateRequest", () => {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { evaluateBusinessRules } from "../src/business/evaluateBusinessRules";
-import { routePolicy } from "../src/router/routerPolicy";
-import { analyzeRequest } from "../src/tools/analyzeRequest";
+import { evaluateBusinessRules } from "../business/evaluateBusinessRules";
+import { routePolicy } from "../router/routerPolicy";
+import { analyzeRequest } from "../tools/analyzeRequest";
 import { buildClassification, buildRequest } from "./fixtures";
 
 function route(request = buildRequest(), classification = buildClassification()) {

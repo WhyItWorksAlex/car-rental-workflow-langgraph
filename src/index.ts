@@ -40,7 +40,7 @@ async function main() {
 
   if (isInterrupted(result)) {
     console.log("\n[human] Workflow paused, waiting for operator...");
-    await sleep(3000); // имитация ожидания оператора
+    await sleep(3000); // imitation of human reply
     console.log("[human] Employee submitted reply (mock):", MOCK_OPERATOR_REPLY);
     result = await graph.invoke(new Command({ resume: MOCK_OPERATOR_REPLY }), config);
   }

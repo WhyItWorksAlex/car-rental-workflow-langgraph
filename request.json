@@ -1,0 +1,27 @@
+{
+  "_fields": {
+    "customerEmail": "Customer email, e.g. anna.klein@example.com",
+    "requestType": "Request type: new_booking | modify_booking | cancel",
+    "bookingRef": "Booking number for modify/cancel. Format: two letters, hyphen, 5 digits, e.g. AB-12345. null for new_booking",
+    "pickupCity": "Pickup city. Allowed: Tel Aviv, Haifa (for new_booking)",
+    "pickupDateAndTime": "Pickup date/time in ISO 8601, e.g. 2026-07-10T09:00:00Z",
+    "returnDateAndTime": "Return date/time in ISO 8601, must be after pickup",
+    "carCategory": "economy | compact | suv | van | premium",
+    "paymentCard": "Required for new_booking. cardNumber, expiryDate (MM/YY), cvv, cardholderName",
+    "additionalNotes": "Free text: child seat, airport pickup, urgency (URGENT, ASAP), etc."
+  },
+  "customerEmail": "anna.klein@example.com",
+  "requestType": "new_booking",
+  "bookingRef": null,
+  "pickupCity": "Tel Aviv",
+  "pickupDateAndTime": "2026-07-10T09:00:00Z",
+  "returnDateAndTime": "2026-07-12T18:00:00Z",
+  "carCategory": "economy",
+  "paymentCard": {
+    "cardNumber": "4111111111111111",
+    "expiryDate": "06/28",
+    "cvv": "123",
+    "cardholderName": "Anna Klein"
+  },
+  "additionalNotes": ""
+}

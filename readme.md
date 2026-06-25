@@ -30,7 +30,14 @@ To make it easier to understand the service structure, a shape was created. It i
 
 ## Launch
 
-Launch this service by command `npm run dev` and it take one random case from file incomingRequests.json or you can add your own case in this file.
+| Command               | What it does                                                 |
+| --------------------- | ------------------------------------------------------------ |
+| `npm run dev`         | Random case from `src/data/incomingRequests.json`            |
+| `npm run dev:request` | Your case from `request.json` (`tsx src/index.ts --request`) |
+
+Edit `request.json`: replace the example values with your data. The `_fields` block is a field guide (hints only — not sent to the workflow). You can also add more test cases to `incomingRequests.json`.
+
+Renaim `.env.example` to `.env` and put real OpenAI api key inside in field `OPENAI_API_KEY`.
 
 ---
 

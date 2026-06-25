@@ -23,6 +23,11 @@ export function routePolicy(ctx: PolicyContext): PolicyRoute {
     return "human_ai_summary";
   }
 
+  if (classification.confidence === "low") {
+    console.log("[policy router] human_ai_summary (low confidence)");
+    return "human_ai_summary";
+  }
+
   if (shouldNeedInfo(request, analysis, classification)) {
     console.log("[policy router] need_info");
     return "need_info";

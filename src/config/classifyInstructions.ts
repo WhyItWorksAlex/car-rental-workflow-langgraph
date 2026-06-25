@@ -24,4 +24,9 @@ You receive a JSON payload with:
 - summary: 2–4 sentences for a human operator — request type, field problems from fieldIssues, urgency, key wishes. Write in English.
 - hasFieldProblems: true if fieldIssues array is non-empty
 - hasAdditionalRequirements: true if additionalNotes contains wishes beyond structured fields
-Do not include payment card numbers or CVV in the output.`;
+- confidence: "low" or "high" depending on the confidence in the classification, especially for fields urgency and hasAdditionalRequirements. If you have a low confidence at least once, set it as "low". If you have a high confidence for all fields, set it as "high".
+
+For example if we can see phrase "I need a car for tomorrow", we can set urgency as "high" and confidence as "high".
+If we can see phrase "I need a child seat, but maybe we can take it even without child seat". You might set hasAdditionalRequirements as "true" and confidence as "low", because it is controversial and we are not sure if the customer really needs a child seat.
+Do not include payment card numbers or CVV in the output.
+`;

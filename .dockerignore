@@ -1,0 +1,18 @@
+# Dependencies and build output (installed/built inside the image)
+node_modules
+dist
+
+# Secrets — never copy into the image
+.env
+.env.*
+!.env.example
+
+# Git and local artifacts
+.git
+.gitignore
+
+# Runtime history written on the host
+src/data/requestsHistory
+
+# Tests are not needed to run the workflow
+src/tests

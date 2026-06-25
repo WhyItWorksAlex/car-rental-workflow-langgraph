@@ -28,16 +28,54 @@ To make it easier to understand the service structure, a shape was created. It i
 
 ---
 
-## Launch
+## Quick start
 
-| Command               | What it does                                                 |
-| --------------------- | ------------------------------------------------------------ |
-| `npm run dev`         | Random case from `src/data/incomingRequests.json`            |
-| `npm run dev:request` | Your case from `request.json` (`tsx src/index.ts --request`) |
+### 1. OpenAI API key (do this once)
 
-Edit `request.json`: replace the example values with your data. The `_fields` block is a field guide (hints only — not sent to the workflow). You can also add more test cases to `incomingRequests.json`.
+The repo contains **`.env.example`** — a template with a fake key (safe to share).
 
-Renaim `.env.example` to `.env` and put real OpenAI api key inside in field `OPENAI_API_KEY`.
+Your real key goes in **`.env`** — that file is created **by you**.
+
+After `git clone` you do **not** have `.env` yet, so you copy the template:
+
+```bash
+cp .env.example .env
+```
+
+Then open `.env` and paste your real `OPENAI_API_KEY`.
+
+### 2. Run the workflow
+
+The workflow has **two input modes** — use one of them:
+
+| Mode        | Description                                                    |
+| ----------- | -------------------------------------------------------------- |
+| **random**  | Picks a random test case from `src/data/incomingRequests.json` |
+| **request** | Runs your own case from `request.json` in the project root     |
+
+#### If you choose **request**
+
+Before the first run (and before each new case):
+
+1. Open `request.json` in the project root.
+2. Replace the example values with your data (see [Example for incoming request](#example-for-incoming-request) below).
+3. The `_fields` block is only a field guide — it is **not** sent to the workflow.
+4. You do **not** need to rebuild the Docker image after editing — save the file and run again.
+
+#### Commands
+
+Pick **one** column — Docker or Node.js (you do not need both). Run `npm install` once and only if you use Node.js.
+
+| Mode        | Docker                                    | Node.js               |
+| ----------- | ----------------------------------------- | --------------------- |
+| **random**  | `docker compose run --build --rm random`  | `npm run dev`         |
+| **request** | `docker compose run --build --rm request` | `npm run dev:request` |
+
+**Docker:** [Docker Desktop](https://www.docker.com/products/docker-desktop/) only — Node.js not required.
+
+**Node.js:** version 20+.
+
+Logs print to the terminal. History saves to `src/data/requestsHistory/`. The process exits when done (CLI, not a website). `npm run build` is not required for Docker.
 
 ---
 

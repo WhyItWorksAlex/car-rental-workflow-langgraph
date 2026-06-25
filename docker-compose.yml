@@ -1,0 +1,18 @@
+x-app: &app
+  build: .
+  env_file:
+    - .env.example
+    - path: .env
+      required: false
+  volumes:
+    - ./request.json:/app/request.json
+    - ./src/data/requestsHistory:/app/src/data/requestsHistory
+
+services:
+  request:
+    <<: *app
+    command: npm run dev:request
+
+  random:
+    <<: *app
+    command: npm run dev

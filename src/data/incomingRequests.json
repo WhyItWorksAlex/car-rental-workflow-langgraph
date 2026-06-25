@@ -129,6 +129,7 @@
     "pickupDateAndTime": null,
     "returnDateAndTime": null,
     "carCategory": null,
+    "paymentCard": null,
     "additionalNotes": "I would like to change the return date to July 20, 2026."
   },
   {
@@ -139,6 +140,7 @@
     "pickupDateAndTime": null,
     "returnDateAndTime": null,
     "carCategory": null,
+    "paymentCard": null,
     "additionalNotes": "Please add a child seat to my existing booking."
   },
   {
@@ -149,6 +151,7 @@
     "pickupDateAndTime": null,
     "returnDateAndTime": null,
     "carCategory": null,
+    "paymentCard": null,
     "additionalNotes": "I need to change pickup time for my reservation. My booking number is AB-98765. I already emailed twice about this — please handle urgently."
   },
   {
@@ -159,6 +162,7 @@
     "pickupDateAndTime": null,
     "returnDateAndTime": null,
     "carCategory": null,
+    "paymentCard": null,
     "additionalNotes": "Please cancel my booking."
   },
   {
@@ -169,6 +173,7 @@
     "pickupDateAndTime": null,
     "returnDateAndTime": null,
     "carCategory": null,
+    "paymentCard": null,
     "additionalNotes": "URGENT: I need to cancel booking HF-33441 before tomorrow. I mentioned this booking number in my previous message. Sorry for the inconvenience."
   },
   {
@@ -195,6 +200,7 @@
     "pickupDateAndTime": "2026-07-11T10:00:00Z",
     "returnDateAndTime": "2026-07-13T18:00:00Z",
     "carCategory": "compact",
+    "paymentCard": null,
     "additionalNotes": "Zod fail: requestType не из enum"
   },
   {
@@ -215,6 +221,12 @@
     "pickupDateAndTime": "2026-07-21",
     "returnDateAndTime": "2026-07-23T18:00:00Z",
     "carCategory": "van",
+    "paymentCard": {
+      "cardNumber": "4111111111111111",
+      "expiryDate": "06/28",
+      "cvv": "123",
+      "cardholderName": "Anna Klein"
+    },
     "additionalNotes": "Zod fail: pickupDateAndTime без времени (нужен ISO datetime)"
   },
   {
@@ -225,6 +237,7 @@
     "pickupDateAndTime": "2026-07-16T10:00:00Z",
     "returnDateAndTime": "2026-07-18T18:00:00Z",
     "carCategory": "sedan",
+    "paymentCard": null,
     "additionalNotes": "Zod fail: carCategory не из enum"
   },
   {

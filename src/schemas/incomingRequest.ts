@@ -16,12 +16,12 @@ export const incomingRequestSchema = z.object({
   customerEmail: z.email(),
   requestType: requestTypeSchema.nullable(),
   bookingRef: z.string().nullable(),
-  pickupCity: z.string().nullable().nullable(),
+  pickupCity: z.string().nullable(),
   pickupDateAndTime: z.iso.datetime().nullable(),
   returnDateAndTime: z.iso.datetime().nullable(),
   carCategory: carCategorySchema.nullable(),
   paymentCard: paymentCardSchema.nullable(),
-  additionalNotes: z.string().default(""),
+  additionalNotes: z.string().max(2000).default(""),
 });
 
 export type RealRequestType = z.infer<typeof requestTypeSchema>;
